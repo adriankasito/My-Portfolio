@@ -1,0 +1,35 @@
+{
+  "name": "Adrian Kasitov2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass --watch src/sass -o src/css --output-style compressed ",
+    "watch:eleventy": "eleventy --serve",
+    "build:sass": "node-sass src/sass -o src/css --output-style compressed",
+    "build:eleventy": "eleventy",
+    "start": "npm-run-all build:sass --parallel watch:*",
+    "build": "npm-run-all build:sass --parallel build:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adrian Kasito/Adrian Kasitov2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Adrian Kasito/Adrian Kasitov2/issues"
+  },
+  "homepage": "https://github.com/Adrian Kasito/Adrian Kasitov2#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "eleventy-critical-css": "^1.0.0",
+    "eleventy-plugin-pwa": "^1.0.8",
+    "node-sass": "^6.0.1"
+  },
+  "devDependencies": {
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.2",
+    "npm-run-all": "^4.1.5"
+  }
+}
